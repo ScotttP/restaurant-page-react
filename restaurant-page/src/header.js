@@ -1,15 +1,30 @@
 import React from 'react';
-class Header extends React.Component {
-    render () {
-        return (
-            <div>
-                <h1>This is My header</h1>
-                <h2>This is another one</h2>
+import Data from './data'
+
+
+function Header () {
+    const headers = Data.headers
+    const headerItems = headers.map((header) =>
+        <li id={header} key={header.id}>
+            {header}
+        </li>
+  );
+    return (
+        <nav className="navBarContainer">
+            <div className = "navBarLeft">
+                <h1 id="restaurantNameNavBar">
+                    Scott's Pub
+                </h1>
             </div>
-            
-        )
-    }
+            <div className = "navBarRight">
+                <ul className = "navBar">
+                    {headerItems}
+                </ul>
+            </div>
+        </nav>
        
+        
+    )
 }
 
 export default Header
