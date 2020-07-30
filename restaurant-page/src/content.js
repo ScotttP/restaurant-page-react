@@ -1,10 +1,17 @@
 import React from 'react';
+import PageLoad from './pageLoad'
 class Content extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            content: <PageLoad />
+        };
+      }
+
     render () {
         return (
             <div>
-                <h1>This is My Content</h1>
-                <h2>This is another one</h2>
+                {this.state.content}
             </div>
             
         )

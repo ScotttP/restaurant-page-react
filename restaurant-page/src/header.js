@@ -5,7 +5,7 @@ import Data from './data'
 function Header () {
     const headers = Data.headers
     const headerItems = headers.map((header) =>
-        <li id={header} key={header.id}>
+        <li id={header} key={header.toString()}>
             {header}
         </li>
   );
