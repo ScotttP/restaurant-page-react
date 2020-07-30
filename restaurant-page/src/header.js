@@ -1,11 +1,13 @@
 import React from 'react';
 import Data from './data'
+import Content from './content'
+import AboutUs from './about';
 
 
 function Header () {
     const headers = Data.headers
     const headerItems = headers.map((header) =>
-        <li id={header} key={header.toString()}>
+        <li id={header} key={header.toString()} onClick = {(e) => handlers(e)}>
             {header}
         </li>
   );
@@ -26,5 +28,12 @@ function Header () {
         
     )
 }
+
+function handlers (e) {
+    if (e.target.id === 'About'){
+        console.log('About Section')
+    }
+}
+
 
 export default Header
