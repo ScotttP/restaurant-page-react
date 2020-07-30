@@ -1,15 +1,22 @@
 import React from 'react';
-class Footer extends React.Component {
-    render () {
-        return (
-            <div>
-                <h1>This is My Footer</h1>
-                <h2>This is another one</h2>
-            </div>
-            
-        )
-    }
-       
+import Data from './data'
+
+
+function Footer () {
+    const footers = Data.footers
+    const footerItems = footers.map((footer) =>
+        <li id={footer} key={footer.id}>
+            {footer}
+        </li>
+  );
+    return (
+        <div className="footerContainer">
+            <ul class="logos">
+                {footerItems}
+            </ul>
+        </div>
+
+    )
 }
 
 export default Footer
