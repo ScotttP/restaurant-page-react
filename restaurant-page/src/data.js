@@ -1,4 +1,4 @@
-let headers = ['About', 'Menu', 'Content'];
+let headers = ['About', 'Menu', 'Contact'];
 let footers = ['Facebook', 'Instagram', 'Twitter'];
 let entrees = ['Hamburger', 'Cheeseburger', 'Wings', 'Hotdog'];
 let sides = ['Fries', 'Chips', 'Tots'];

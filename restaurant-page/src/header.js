@@ -1,20 +1,20 @@
 import React from 'react';
 import Data from './data'
-import Content from './content'
-import AboutUs from './about';
 
 
-function Header () {
+class Header extends React.Component{
+
+  render (){
     const headers = Data.headers
     const headerItems = headers.map((header) =>
-        <li id={header} key={header.toString()} onClick = {(e) => handlers(e)}>
+        <li id={header} key={header.toString()} onClick = {() => this.props.handleClick(header)}>
             {header}
         </li>
-  );
+    );
     return (
         <nav className="navBarContainer">
             <div className = "navBarLeft">
-                <h1 id="restaurantNameNavBar">
+                <h1 id="restaurantNameNavBar" onClick = {() => this.props.handleClick()}>
                     Scott's Pub
                 </h1>
             </div>
@@ -27,12 +27,8 @@ function Header () {
        
         
     )
-}
+  }
 
-function handlers (e) {
-    if (e.target.id === 'About'){
-        console.log('About Section')
-    }
 }
 
 

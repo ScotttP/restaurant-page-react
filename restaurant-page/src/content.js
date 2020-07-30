@@ -1,22 +1,11 @@
 import React from 'react';
-import PageLoad from './pageLoad'
-import AboutUs from './about'
-class Content extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            content: <PageLoad />
-        };
-    }
 
-    handlers () {
-        console.log('handler function')
-    }
+class Content extends React.Component {
 
     render () {
         return (
             <div>
-                {this.state.content}
+                {this.props.content}
             </div>
             
         )
