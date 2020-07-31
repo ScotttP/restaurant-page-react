@@ -1,1 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { 
+    background: url("https://images.unsplash.com/photo-1518099074172-2e47ee6cfdc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2560&q=80") no-repeat center center fixed; 
+    background-size: cover;
+}
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
+}
+#root{
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin-top: 2vh;
+    text-align: center;
+    min-width: 250px;
+    max-width: 900px;
+    width: 70vw;
+    line-height: 2rem;
+    font-weight: 300;
+}
+li {
+    list-style-type: none;
+}
+.navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: 2px solid rgb(184, 157, 9);
+    height: 10vh;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+.navBar{
+    display: flex;
+}
+.navBarRight{
+    display: flex;
+    
+}
+.navBarLeft{
+    display: flex;
+    margin: 2em;
+}
+.navBar > li{
+    list-style-type: none;
+    margin: 2rem;
+    transition: .5s;
+}
 
+.navBar > li:hover{
+   text-decoration: underline;
+   color: rgb(184, 157, 9);
+   cursor: pointer;
+}
+
+.logos > li{
+    list-style-type: none;
+    margin: 2rem;
+    transition: .5s;
+    cursor: pointer;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    font-weight: 400;
+    margin-top: 10em;
+    
+}
+.footerContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    background-color: black;
+    position: fixed; 
+    bottom: 0; 
+    height: 7vh;
+}
+.logos{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu {
+    font-family: 'Caveat', cursive;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 60px;
+    width: 50%;
+    font-size: 30px;
+    border: 3px solid rgb(143, 22, 1);
+    border-radius: 10px;
+    margin: 35% 0% 9% 0%;
+}
+.menu > h1 {
+    font-weight: 700;
+    
+}
+
+.menu > li {
+    font-weight: 400;
+    list-style-type: none;
+    
+}
+
+.entreeList, .sideList , .drinkList {
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+}
+
+#restaurantNamePageLoad , #restaurantNameNavBar{
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+}
+
+#restaurantNamePageLoad {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 30vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    border: 3px solid rgb(143, 22, 1);
+    border-radius: 10px;
+}
+
+#restaurantNameNavBar {
+    float: left;
+    transition: 0.5s;
+    font-size: 40px;
+}
+#restaurantNameNavBar:hover {
+    cursor: pointer;
+    color: rgb(184, 157, 9);
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 60vh;
+    max-height: 600px;
+    width: 60vw;
+    min-width: 400px;
+    max-width: 950px;
+    border: 3px solid rgb(143, 22, 1);
+    border-radius: 10px;
+}
+
+.aboutUs > h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    min-width: 400px;
+    max-width: 950px;
+    height: 50vh;
+    max-height: 500px;
+}
+
+.formDiv {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 70vh;
+    max-height: 700px;
+    width: 60vw;
+    min-width: 400px;
+    max-width: 950px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    
+}
+
+form{
+    border: 3px solid rgb(143, 22, 1);
+    border-radius: 10px;
+}
+
+#nameInput, #emailInput {
+    height: 1.5rem;
+    width: 20vw;
+    font-size: 20px;
+    padding: 20px 10px; 
+    line-height: 20px;
+}
+
+#textInput {
+    height: 10em;
+    width: 25em;
+    resize: none;
+    font-size: 20px;
+}
+
+#submitButton {
+    height: 3vh;
+    width: 7vw;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(60, 146, 60);
+    
+}

@@ -25,21 +25,21 @@ export default class Menu extends React.Component {
         );
         return (
             <div className="menu">
-               <div class="entreeItems">
+               <div className="entreeItems">
                     <h1 id="entreeHeader">Entreés</h1>
-                    <ul class="entreeList">
+                    <ul className="entreeList">
                         {entreeItems}
                     </ul>
                </div>
-               <div class="sideItems">
+               <div className="sideItems">
                     <h1 id="sideHeader">Sides</h1>
-                    <ul class="sideList">
+                    <ul className="sideList">
                         {sideItems}
                     </ul>
                </div>
-               <div class="drinkItems">
+               <div className="drinkItems">
                     <h1 id="drinkHeader">Drinks</h1>
-                    <ul class="drinkList">
+                    <ul className="drinkList">
                         {drinkItems}
                     </ul>
                </div>
