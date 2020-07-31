@@ -17,7 +17,7 @@ class App extends React.Component {
     };
 }
 
-  handleTabs(clickedTab) {
+  handleTabs(clickedTab) { // if the tab is clicked it will render that specific tab
     if (clickedTab === 'About'){
       this.setState({ content: <AboutUs /> })
     }else if (clickedTab === 'Menu'){
